@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5962206735151541163}
   - component: {fileID: 3330075003585430634}
   - component: {fileID: 2293786738000231704}
+  - component: {fileID: -5231060241330658029}
   m_Layer: 0
   m_Name: ball
   m_TagString: trap
@@ -144,5 +145,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c861c1c9ff75694fb5cafee685138e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5231060241330658029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8254870900294380980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bcd4b9644cfc414096619811f2fa17f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

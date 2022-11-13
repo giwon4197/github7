@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d649615cb118fa2a5f84ab1e27dde2be2b70ece87e18b09ff2c2d428f62df9aa
-size 539
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class fire : MonoBehaviour
+{
+    public GameObject ball;
+
+    
+    void Start()
+    {
+        InvokeRepeating("shoot", 0.5f,2f);
+    }
+
+    void shoot()
+    {
+        float speed = 1500 * Time.deltaTime;
+
+        GameObject bullet = Instantiate(ball, transform.position, transform.rotation);
+        Rigidbody2D rigid = bullet.GetComponent<Rigidbody2D>();
+        rigid.AddForce(Vector2.left * speed, ForceMode2D.Impulse);
+    }
+}
